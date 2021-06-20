@@ -7,6 +7,6 @@ class Artikel extends CI_Controller{
 	function tampilartikel(){
 		$id = $this->uri->segment(3);
 		$data['tartikel'] = $this->model_camp->tampilartikel1($id);
-		$this->load->view('lp/artikel.php',$data);
+		$this->load->view('lp/artikel',$data);
 	}
 }

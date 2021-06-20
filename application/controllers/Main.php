@@ -9,4 +9,12 @@ class Main extends CI_Controller{
 		$this->load->view('lp/mainview',$data);
 	}
 
+	public function daftar(){
+		$this->load->view('lp/daftar');
+	}
+
+	public function daftarsimpan(){
+		$this->Model_camp->daftarsimpan();
+		redirect('login');
+	}
 }

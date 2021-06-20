@@ -11,5 +11,28 @@ class Panel extends CI_Controller{
 		$this->load->view('panel/adminpage',$data);
 	}
 
-	public function asasa
+
+	public function adduser(){
+		$this->load->view('panel/adduser');
+	}
+	public function usersimpan(){
+		$this->Model_camp->daftarsimpan();
+		redirect(base_url('panel/userview'));
+	}
+	public function userview(){
+		$data['tuser'] = $this->Model_camp->tampiluser();
+		$this->load->view('panel/user');
+	}
+	public function edituserview($id){
+		$data['useredit'] = $this->Model_camp->edituser($id);
+		$this->load->view('panel/useredit');
+	}
+	public function updateuser(){
+		$result = $this->Model_camp->updateuser();
+		redirect(base_url('panel/userview'));
+	}
+	public function deleteuser($id){
+		$result = $this->Model_camp->deleteuser($id);
+		redirect(base_url('panel/userview'));
+	}
 }

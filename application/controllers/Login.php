@@ -6,7 +6,7 @@ class Login extends CI_Controller{
 
 	public function index(){
 		//$this->load->view('admin/view_login');
-		$this->load->view('adminlte/view_login');
+		$this->load->view('lp/login');
 	}
 
 	function autentikasi_user(){
@@ -32,7 +32,7 @@ class Login extends CI_Controller{
 				$this->session->set_userdata('level','1');
 				$this->session->set_userdata('ses_username',$data['username']);
 				$this->session->set_userdata('ses_password', $data['password']);
-				redirect('panel');
+				redirect('main');
 			}
 		}else{
 			redirect('login');
