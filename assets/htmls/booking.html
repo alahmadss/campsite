@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="../img/favicon.ico" type="image/png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <title>
+          Winter-Camp | Your Camping Partner.
+        </title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+              <img src="../img/favicon.ico" alt="" width="25" height="25" class="d-inline-block align-text-top">
+              <a class="navbar-brand" href="#">Winter-<strong>Camp</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="booking.html" >Booking</a>
+                  </li>
+                </ul>
+                  <a href="login.html" class="btn btn-outline-primary">Login</a>&nbsp;
+                  <a href="daftar.html" class="btn btn-outline-primary">Daftar</a>
+              </div>
+            </div>
+          </nav>
+          <br><br>
+          <br>
+            <main>
+                <div class="container">
+                    <div class="section-headline text-center">
+                        <h1>Nama Lokasi</h1>
+                    </div>
+                    <form class="needs-validation" novalidate id="form" action="" method="">
+                        <br>
+                        <div class="p-5">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Username</label>
+                            <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <div id="usernameh" class="form-text" >Isikan username anda.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nama spot</label>
+                            <br>
+                            <select class="form-select" name="nama_spot" aria-label="Default select example" required>
+                              <option selected>Pilih spot camping</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <div id="nmspth" class="form-text">Pilih spot camping.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Nomor KTP</label>
+                            <input type="text" name="no_ktp" class="form-control" id="exampleInputPassword1" required>
+                            <div id="nmrktph" class="form-text">Isikan nomor KTP anda.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Alamat</label>
+                          <div class="form-floating">
+                            <textarea class="form-control" name="alamat" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                            <label for="floatingTextarea">Isikan alamat anda</label>
+                          </div>
+                      </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Nomor Telepon</label>
+                            <input type="text" name="no_telp" class="form-control" id="exampleInputPassword1" required>
+                            <div id="nmrktph" class="form-text">Isikan nomor telepon anda.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Tanggal check in</label>
+                          <input type="date" name="tgl_check_in" class="form-control" id="exampleInputPassword1" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Tanggal check out</label>
+                        <input type="date" name="tgl_check_out" class="form-control" id="exampleInputPassword1" required>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="section-headline text-center">
+                            <button type="submit" class="btn btn-outline-dark">Submit</button>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <br>
+            <br>
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <section class="">
+                <br>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase mb-4">
+                        <i class="me-3"></i>Winter-<strong>Camp</strong>
+                        </h6>
+                        <p align="justify">
+                        Kami adalah perusahaan reservasi spot camping yang 
+                        berusaha yang terbaik untuk membantu anda menikmati perjalanan camping anda.
+                        </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Kontak kami
+                    </h6>
+                    <p><i class="me-3"></i> Instagram</p>
+                    <p><a class="me-3" href="https://www.instagram.com/alahmaadsyah">@alahmaadsyah</a></p>
+                    <p><a class="me-3" href="https://www.instagram.com/dimaswicakk">@dimaswicakk</a></p>
+                </div>
+                </div>
+            </div>
+            </section>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright: Al Ahmad Syah & Dimas Wicaksono 
+            <a class="text-reset fw-bold" href="https://www.upnyk.ac.id/"><strong>UPNYK</strong></a>
+            </div>
+        </footer>
+          <!--JavaScript-->
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../jquery/jquery-3.6.0.js"></script>
+        <script>
+          (function() {
+            "use strict";
+            
+            window.addEventListener("load", function() {
+              var form = document.getElementById("form");
+              form.addEventListener("submit", function(event) {
+                if (form.checkValidity() == false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+              }, false);
+            }, false);
+          }());
+          </script>​
+    </body>
+</html>

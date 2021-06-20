@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="../img/favicon.ico" type="image/png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <title>
+          Winter-Camp | Your Camping Partner.
+        </title>
+    </head>
+    <body>
+        
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container-fluid">
+                  <img src="../img/favicon.ico" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                  <a class="navbar-brand" href="#">Winter-<strong>Camp</strong></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    </ul>
+                        <span class="nav-item" style="color: whitesmoke;">Selamat datang, User</span>
+                        &nbsp;
+                      <a href="index.html" class="btn btn-outline-primary">Logout</a>
+                  </div>
+                </div>
+              </nav>
+            <div class="row flex-nowrap">
+                <div class="sticky col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                        <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <span class="fs-5 d-none d-sm-inline">.</span>
+                        </a>
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                            <li class="nav-item">
+                                <a href="adminpage.html" class="nav-link align-middle px-0" style="color: white;">
+                                    <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle" style="color: white;">
+                                    <span class="ms-1 d-none d-sm-inline">Booking</span> </a>
+                                <ul class="collapse nav flex-column ms-2" id="submenu1" data-bs-parent="#menu">
+                                    <li>
+                                        <a href="admin_booking.html" class="nav-link px-2" style="color: white;"> <span class="d-none d-sm-inline">Booking list</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle " style="color: white;">
+                                    <span class="ms-1 d-none d-sm-inline">Camp-site</span></a>
+                                <ul class="collapse nav flex-column ms-2" id="submenu2" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="admin_campspot_input.html" class="nav-link px-2" style="color: white;"> <span class="d-none d-sm-inline">Input camping site</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="admin_campspot.html" class="nav-link px-2" style="color: white;"> <span class="d-none d-sm-inline">Camping site list</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle" style="color: white;">
+                                    <span class="ms-1 d-none d-sm-inline">User</span></a>
+                                <ul class="collapse nav flex-column ms-2" id="submenu3" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="admin_user_input.html" class="nav-link px-2" style="color: white;"> <span class="d-none d-sm-inline">Input new user </span></a>
+                                    </li>
+                                    <li>
+                                        <a href="admin_user.html" class="nav-link px-2" style="color: white;"> <span class="d-none d-sm-inline">User list</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col py-3">
+                    <br>
+                    <br>
+                    <div class="section-headline text-center">
+                        <h3>Data</h3>
+                      </div>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Jenis data</th>
+                              <th scope="col">Jumlah data</th>
+                              <th scope="col">Pengolahan</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Camping spot</td>
+                                <td>100</td>
+                                <td><a href="admin_campspot.html" class="btn btn-outline-primary">Pengolahan</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Booking data</td>
+                                <td>123</td>
+                                <td><a href="admin_booking.html" class="btn btn-outline-primary">Pengolahan</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>User</td>
+                                <td>4</td>
+                                <td><a href="admin_user.html" class="btn btn-outline-primary">Pengolahan</a></td>
+                            </tr>
+                          </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+          <!--JavaScript-->
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>
