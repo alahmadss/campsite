@@ -18,7 +18,7 @@ class Login extends CI_Controller{
 		echo $password;
 
 
-		$cek_user = $this->model_camp->cari_user($username, $password);
+		$cek_user = $this->Model_camp->cari_user($username, $password);
 
 		if ($cek_user->num_rows() > 0){
 			$data = $cek_user->row_array();

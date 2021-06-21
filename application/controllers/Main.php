@@ -5,7 +5,7 @@ class Main extends CI_Controller{
 	}
 	
 	public function index(){
-		$data['listcampspot'] = $this->Model_camp->tampilspot();
+		$data['tcamp'] = $this->Model_camp->tampilcampspot();
 		$this->load->view('lp/mainview',$data);
 	}
 
@@ -16,5 +16,17 @@ class Main extends CI_Controller{
 	public function daftarsimpan(){
 		$this->Model_camp->daftarsimpan();
 		redirect('login');
+	}
+	public function booking(){
+		$data['tcamp'] = $this->Model_camp->tampilcampspot();
+		$this->load->view('lp/booking',$data);
+	}
+	public function bookingsimpan(){
+		$this->Model_camp->bookingsimpan();
+		redirect('main');
+	}
+	function logout(){
+		$this->session->sess_destroy();
+		redirect(base_url('main'));
 	}
 }
